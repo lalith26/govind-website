@@ -1,0 +1,54 @@
+/* ============================================================
+  SECTIONS
+============================================================ */
+
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section.smallmodule.parallax {
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section.module.parallax-1 {
+  background-image: url("../images/bits4.png");
+}
+section.module.parallax-2 {
+  background-image: url("../images/paypal.jpeg");
+}
+section.smallmodule.parallax-2 {
+  background-image: url("../images/paypal.jpeg");
+}
+section.module.parallax-3 {
+  background-image: url("../images/usc5.jpg");
+}
+section.smallmodule.parallax-3 {
+  background-image: url("../images/usc5.jpg");
+}
+section.module.parallax-4 {
+  background-image: url("../images/bombay4.jpg");
+}
+section.smallmodule.parallax-4 {
+  background-image: url("../images/bombay4.jpg");
+}
+
+section.module.parallax-5 {
+  background-image: url("../images/bits5.jpg");
+}
+section.smallmodule.parallax-5 {
+  background-image: url("../images/bits5.jpg");
+}
