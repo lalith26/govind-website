@@ -38,13 +38,19 @@
 }
 
 .dp {
-  width: 120px;
-  height: 120px;
-  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   border: 3px solid #fff;
 }
 
-.profile-description {
+.slogan1 {
+  font-size: 4em;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.slogan2 {
   font-size: 2.5em;
   font-weight: 400;
   opacity: 0.9;

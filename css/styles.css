@@ -3,7 +3,7 @@
 ============================================================ */
 
 section.module.parallax {
-  height: 600px;
+  height: 700px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,7 +25,7 @@ section.smallmodule.parallax {
 }
 
 section.module.parallax-1 {
-  background-image: url("../images/bits4.png");
+  background-image: url("../images/home.jpg");
 }
 section.module.parallax-2 {
   background-image: url("../images/paypal.jpeg");
