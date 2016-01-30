@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="css/custom-styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('#myTabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+      })
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -51,14 +59,15 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                  <h2><i class="fa fa-user fa-3x"></i></h2>
+                  <h2><i class="fa fa-building fa-3x"></i></h2>
                   <p class="lead">
-                    I have been a Software Engineer at PayPal since January 2014.
-                    I have been working on Rest Services.
-                    <br/><br/>
-                    I recently graduated with a Bachelors degree in Computer Science from BITS, Pilani
-                    <br/><br/>
-                    I enjoy this, this, this..
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                   been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a galley of type and scrambled it to make a type specimen book. It has survived
+                   not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                     containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                   Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
                 </div>
               </div>
@@ -68,73 +77,147 @@
           <section class="smallmodule parallax parallax-2">
               <div class="table-section">
                 <div class="vert-text">
-                  <h2>I have worked at a few Places too !!!</h2>
+                  <h2>We have quite a few Products !!</h2>
                 </div>
               </div>
           </section>
 
           <section class="module">
-            <div id="work">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2><i class="fa fa-users fa-3x white"></i></h2>
-                    <br>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-3 text-center">
-                    <div class="work-item">
-                      <img class="work-icon enlarge-on-hover" src="images/fb.jpg" />
-                      <h3>
-                        PayPal <br/>
-                        <small>Jan 2014 - Present</small>
-                      </h3>
-                      <p class="lead">
-                        I am enabling the site with better Feedback support. I work at the Bangalore office.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4 text-center">
-                    <div class="work-item">
-                      <img class="work-icon enlarge-on-hover" src="images/fb.jpg" />
-                      <h3>
-                        PayPal <br/>
-                        <small>Jan 2014 - Present</small>
-                      </h3>
-                      <p class="lead">
-                        I am enabling the site with better Feedback support. I work at the Bangalore office.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 text-center">
-                    <div class="work-item">
-                      <img class="work-icon enlarge-on-hover" src="images/fb.jpg" />
-                      <h3>
-                        PayPal <br/>
-                        <small>Jan 2014 - Present</small>
-                      </h3>
-                      <p class="lead">
-                        I am enabling the site with better Feedback support. I work at the Bangalore office.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 text-center">
-                    <div class="work-item">
-                      <img class="work-icon enlarge-on-hover" src="images/fb.jpg" />
-                      <h3>
-                        PayPal <br/>
-                        <small>Jan 2014 - Present</small>
-                      </h3>
-                      <p class="lead">
-                        I am enabling the site with better Feedback support. I work at the Bangalore office.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <br/>
+                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
 
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="images/product-1.JPG" alt="">
+                        <div class="carousel-caption">
+                          ...
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="images/product-2.JPG" alt="...">
+                        <div class="carousel-caption">
+                          ...
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="images/product-3.JPG" alt="...">
+                        <div class="carousel-caption">
+                          ...
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="images/product-4.JPG" alt="...">
+                        <div class="carousel-caption">
+                          ...
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="images/product-5.JPG" alt="...">
+                        <div class="carousel-caption">
+                          ...
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <br/>
+                  <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist" id="myTabs">
+                      <li role="presentation" class="active"><a href="#economy" aria-controls="home" role="tab" data-toggle="tab">Economy</a></li>
+                      <li role="presentation"><a href="#standard" aria-controls="profile" role="tab" data-toggle="tab">Standard</a></li>
+                      <li role="presentation"><a href="#loading-unloading" aria-controls="messages" role="tab" data-toggle="tab">Loading & Unloading</a></li>
+                      <li role="presentation"><a href="#slabedge" aria-controls="settings" role="tab" data-toggle="tab">Slab Edge</a></li>
+                      <li role="presentation"><a href="#eotcranes" aria-controls="settings" role="tab" data-toggle="tab">EOT Cranes</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="economy">
+                        <p class="lead">
+                          Economy.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                          a galley of type and scrambled it to make a type specimen book. It has survived
+                         not only five centuries, but also the leap into electronic typesetting, remaining
+                          essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                           containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                         Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="standard">
+                        <p class="lead">
+                          Standard. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                          a galley of type and scrambled it to make a type specimen book. It has survived
+                         not only five centuries, but also the leap into electronic typesetting, remaining
+                          essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                           containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                         Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="loading-unloading">
+                        <p class="lead">
+                          Loading - Unloading. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                          a galley of type and scrambled it to make a type specimen book. It has survived
+                         not only five centuries, but also the leap into electronic typesetting, remaining
+                          essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                           containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                         Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="slabedge">
+                        <p class="lead">
+                          Slab Edge. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                          a galley of type and scrambled it to make a type specimen book. It has survived
+                         not only five centuries, but also the leap into electronic typesetting, remaining
+                          essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                           containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                         Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="eotcranes">
+                        <p class="lead">
+                          EOT Cranes. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                          a galley of type and scrambled it to make a type specimen book. It has survived
+                         not only five centuries, but also the leap into electronic typesetting, remaining
+                          essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                           containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                         Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  Video
+                </div>
               </div>
             </div>
           </section>
@@ -142,7 +225,7 @@
           <section class="smallmodule parallax parallax-3">
             <div class="table-section">
               <div class="vert-text">
-                <h2>I like working on Awesome Projects !!!</h2>
+                <h2>Contact Us</h2>
               </div>
             </div>
           </section>
@@ -153,171 +236,19 @@
             <div id="projects">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2><i class="fa fa-code fa-3x blck"></i></h2>
-                    <br>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4 text-center">
-                    <div class="project-item">
-                      <img class="project-icon enlarge-on-hover" src="images/matrix.jpeg" />
-                      <h3>
-                        Code <br/>
-                        <small>Fall 2013</small>
-                      </h3>
-                      <p class="lead">
-                        This Project does this..
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 text-center">
-                    <div class="project-item">
-                      <img class="project-icon enlarge-on-hover" src="images/matrix.jpeg" />
-                      <h3>
-                        Code <br/>
-                        <small>Fall 2013</small>
-                      </h3>
-                      <p class="lead">
-                        This Project does this..
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 text-center">
-                    <div class="project-item">
-                      <img class="project-icon enlarge-on-hover" src="images/matrix.jpeg" />
-                      <h3>
-                        Code <br/>
-                        <small>Fall 2013</small>
-                      </h3>
-                      <p class="lead">
-                        This Project does this..
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4 text-center">
-                    <div class="project-item">
-                      <img class="project-icon enlarge-on-hover" src="images/matrix.jpeg" />
-                      <h3>
-                        Code <br/>
-                        <small>Fall 2013</small>
-                      </h3>
-                      <p class="lead">
-                        This Project does this..
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 text-center">
-                    <div class="project-item">
-                      <img class="project-icon enlarge-on-hover" src="images/matrix.jpeg" />
-                      <h3>
-                        Code <br/>
-                        <small>Fall 2013</small>
-                      </h3>
-                      <p class="lead">
-                        This Project does this..
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 text-center">
-                    <div class="project-item">
-                      <img class="project-icon enlarge-on-hover" src="images/matrix.jpeg" />
-                      <h3>
-                        Code <br/>
-                        <small>Fall 2013</small>
-                      </h3>
-                      <p class="lead">
-                        This Project does this..
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4 text-center">
-                    <div class="project-item">
-                      <img class="project-icon enlarge-on-hover" src="images/matrix.jpeg" />
-                      <h3>
-                        Code <br/>
-                        <small>Fall 2013</small>
-                      </h3>
-                      <p class="lead">
-                        This Project does this..
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 text-center">
-                    <div class="project-item">
-                      <img class="project-icon enlarge-on-hover" src="images/matrix.jpeg" />
-                      <h3>
-                        Code <br/>
-                        <small>Fall 2013</small>
-                      </h3>
-                      <p class="lead">
-                        This Project does this..
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 text-center">
-                    <div class="project-item">
-                      <img class="project-icon enlarge-on-hover" src="images/matrix.jpeg" />
-                      <h3>
-                        Code <br/>
-                        <small>Fall 2013</small>
-                      </h3>
-                      <p class="lead">
-                        This Project does this..
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </section>
-
-          <section class="smallmodule parallax parallax-4">
-            <div class="table-section">
-              <div class="vert-text">
-                <h2>About Me !!!</h2>
-              </div>
-            </div>
-          </section>
-          <section class="module">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                  <h2><i class="fa fa-thumbs-up fa-3x"></i></h2>
-                  <p class="lead">
-                    I stay at Bombay.. I love dancing, reading Books, hanging out with Friends etc.
-                    <br/><br/>
-                    <br/><br/>
-                    <br/><br/>
-                    <br/><br/>
-                    <br/><br/>
-
-
-                  </p>
+                  Contact form
                 </div>
               </div>
             </div>
           </section>
-          <section class="smallmodule parallax parallax-5">
-            <div class="table-section">
-              <div class="vert-text">
-                <h2>Here is my Resume !!!</h2>
-                <br/>
-                <a href="varunsah_cv.pdf"><i class="fa fa-file-pdf-o fa-5x white"></i></a>
-              </div>
-            </div>
-          </section>
+
+
 
 
       </main><!-- /main -->
 
       <footer class="text-center">
-        &#169; Varun Sah 2015
+        &#169; RMG Machines 2015
       </footer><!-- /footer -->
 
     </div><!-- /#wrapper -->
