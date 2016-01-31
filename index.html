@@ -11,10 +11,17 @@
     <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-      $('#myTabs a').click(function (e) {
-        e.preventDefault();
-        $(this).tab('show');
-      })
+      $(document).ready(function() {
+        $('#myTabs a').click(function (e) {
+          e.preventDefault();
+          $(this).tab('show');
+        });
+
+        $('#nav-li li').click(function (e) {
+          $('.nav li').removeClass('active');
+          $(this).addClass('active');
+        });
+      });
     </script>
   </head>
   <body>
@@ -33,11 +40,11 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav" id="nav-li">
             <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#products">Products</a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -252,10 +259,10 @@
 
 
 
-          <section class="module content">
-            <div id="contact">
-              <div class="container">
-                <div class="row">
+          <section class="module">
+            <div class="container">
+              <div class="row">
+                <div id="contact">
                   <div class="col-md-6">
                     <form method="post" name="contact_form" action="contact-form-handler.php">
                       <div class="form-group">
@@ -272,7 +279,7 @@
                       </div>
                       <div class="form-group">
                         <label for="recipient-name" class="control-label">Company Name</label>
-                        <input type="text" class="form-control" id="companyname" name="companynam" required>
+                        <input type="text" class="form-control" id="companyname" name="companyname" required>
                       </div>
                       <div class="form-group">
                         <label for="recipient-name" class="control-label">Address</label>
