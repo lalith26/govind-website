@@ -1,6 +1,10 @@
 /* ============================================================
   SECTIONS
 ============================================================ */
+section.module {
+  height: auto;
+  margin-bottom: 40px;
+}
 
 section.module.parallax {
   height: 700px;
@@ -13,8 +17,10 @@ section.module.parallax {
   background-size: cover;
 }
 
+
+
 section.smallmodule.parallax {
-  height: 400px;
+  height: 600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -51,4 +57,12 @@ section.module.parallax-5 {
 }
 section.smallmodule.parallax-5 {
   background-image: url("../images/bits5.jpg");
+}
+
+section:before {
+  display: block;
+  content: " ";
+  margin-top: -40px;
+  height: 40px;
+  visibility: hidden;
 }
